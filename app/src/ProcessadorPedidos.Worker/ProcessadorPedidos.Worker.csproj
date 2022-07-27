@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-ProcessadorPedidos.Worker-c5bdc606-022e-41a3-97c3-2b6d54443fb6</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="Serilog.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProcessadorPedidos.Application\ProcessadorPedidos.Application.csproj" />
+    <ProjectReference Include="..\ProcessadorPedidos.Domain\ProcessadorPedidos.Domain.csproj" />
+    <ProjectReference Include="..\ProcessadorPedidos.Infrastructure\ProcessadorPedidos.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="./Cert/kafka.dotnet-app.keystore.jks"  CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+    <Content Include="./Cert/fake-ca-1.crt"  CopyToOutputDirectory="Always" CopyToPublishDirectory="Always" />
+  </ItemGroup>
+</Project>

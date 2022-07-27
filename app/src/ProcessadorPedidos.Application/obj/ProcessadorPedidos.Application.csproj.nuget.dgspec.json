@@ -1,0 +1,144 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Application/ProcessadorPedidos.Application.csproj": {}
+  },
+  "projects": {
+    "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Application/ProcessadorPedidos.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Application/ProcessadorPedidos.Application.csproj",
+        "projectName": "ProcessadorPedidos.Application",
+        "projectPath": "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Application/ProcessadorPedidos.Application.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Application/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Domain/ProcessadorPedidos.Domain.csproj": {
+                "projectPath": "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Domain/ProcessadorPedidos.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Confluent.Kafka": {
+              "target": "Package",
+              "version": "[*, )"
+            },
+            "Confluent.SchemaRegistry": {
+              "target": "Package",
+              "version": "[*, )"
+            },
+            "Confluent.SchemaRegistry.Serdes": {
+              "target": "Package",
+              "version": "[*, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Domain/ProcessadorPedidos.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Domain/ProcessadorPedidos.Domain.csproj",
+        "projectName": "ProcessadorPedidos.Domain",
+        "projectPath": "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Domain/ProcessadorPedidos.Domain.csproj",
+        "packagesPath": "/root/.nuget/packages/",
+        "outputPath": "/home/eduardobrl/projects/stacks/kafka-docker-ssl/app/src/ProcessadorPedidos.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/root/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "System.Reactive": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

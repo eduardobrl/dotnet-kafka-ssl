@@ -1,0 +1,23 @@
+{
+    "type":"record",
+    "name":"NovoPedido",
+    "namespace":"com.pedidoaberto.pedidos",
+    "fields":[
+        {
+            "name":"sku",
+            "type":"string"
+        },
+        {
+            "name":"nome",
+            "type":"string"
+        },
+        {
+            "name":"fornecedor",
+            "type":"string"
+        },
+        {
+            "name":"vendedor",
+            "type":"string"
+        }
+    ]
+ }
